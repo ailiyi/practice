@@ -210,6 +210,7 @@
 .form input{
     display: block;
     width: 440px;
+    height: 25px;
     margin: 10px;
     color: #000;
     border: none;
@@ -230,6 +231,7 @@
 #submit{
     float: right;
     width: 80px;
+    height: 30px;
     color: #fff;
     background-color: #00cc99;
     border: none;
