@@ -62,6 +62,13 @@
 
 }
 
+.header-3 a:hover{
+    background-color: rgb(68,218,180);
+    color: #fff;
+    border-radius: 10px;
+    padding: 3px;
+}
+
 .header-3 .a-1{
     position: absolute;
     right: 0;
@@ -239,6 +246,10 @@
     border-radius: 8px;
 }
 
+#submit:hover{
+    background-color: #fff;
+    color: #000;
+}
 .footer{
     grid-column: 1/4;
     grid-row: 38/41;
