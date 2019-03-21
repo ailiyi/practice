@@ -53,7 +53,7 @@
    bottom: 0; */
    display: block;
    float: right;
-   margin: 100px 10px 0px 10px;
+   margin: 80px 10px 0px 10px;
 }
 
 .header-2{
@@ -261,6 +261,7 @@
 #submit:hover{
     background-color: #fff;
     color: #000;
+    cursor: pointer;
 }
 .footer{
     grid-column: 1/4;
