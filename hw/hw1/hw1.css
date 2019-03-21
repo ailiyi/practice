@@ -11,7 +11,7 @@
 .header-1{
    grid-column: 3/4;
    grid-row: 1/2;
-   position: relative;
+   /* position: relative; */
 }
 
 .header-1 a{
@@ -19,29 +19,41 @@
    font-size: 12px;
 }
 .fb{
-   position: absolute;
+   /* position: absolute; 
    right: 80px;
-   bottom: 0;
-   color: rgb(68,96,160)
+   bottom: 0; */
+   display: block;
+   float: right;
+   margin: 80px 10px 0px 10px;
+   color: rgb(68,96,160);
 }
 
 .fb-icon{
-    position: absolute;
+    /* position: absolute;
     right: 125px;
-    bottom: 0;
+    bottom: 0; */
+    display: block;
+    float: right;
+    margin: 80px 10px 0px 10px;
 }
 
 .twitter{
-   position: absolute;
+   /* position: absolute;
    right: 0;
-   bottom: 0;
+   bottom: 0; */
    color: rgb(0,170,236);
+   display: block;
+   float: right;
+   margin: 80px 10px 0px 10px;
 }
 
 .twitter-icon{
-   position: absolute;
+   /* position: absolute;
    right: 50px;
-   bottom: 0;
+   bottom: 0; */
+   display: block;
+   float: right;
+   margin: 100px 10px 0px 10px;
 }
 
 .header-2{
