@@ -12,19 +12,20 @@ header{
   grid-column: 1/4;
   grid-row: 1/2;
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
   margin: 10px;
   font-size: 0.8em;
 }
 
-header .fb{
+.fb{
+  font-size: 10px;
   text-decoration: none;
   color: rgb(68,96,160);
   margin-right: 1%;
 }
 
-header .twitter{
+.twitter{
+  font-size: 10px;
   text-decoration: none;
   color: rgb(0,170,236);
   margin-right: 1%;
@@ -34,28 +35,39 @@ header .twitter{
 nav{
   grid-column: 1/4;
   grid-row: 2/3;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
 }
 
-.hex{
-  margin-bottom: 10px;
-  float: left;
+h1{
+  background-image: url(https://github.com/ailiyi/practice/blob/master/hw/hw1/img/%E4%BD%BF%E7%94%A8html%E5%81%9A%E7%B6%B2%E7%AB%99-_03.jpg?raw=true);
+  background-repeat: no-repeat;
+  width: 170px;
+  height: 36px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.hex img{
-  max-width: 70%;
-  height: auto;
+nav ul{
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
 }
 
-nav a{
+nav li a{
   text-decoration: none;
+  text-align: center;
   font-size: 3vmin;
   color: rgb(68,218,180);
   margin: 0 2% 0 0;
-  float: right;
-  
+  display: block;
+  width: 100%;
+  margin: 10px;
 }
 
-nav a:hover{
+nav li a:hover{
   background-color: rgb(68,218,180);
   color: #fff;
   border-radius: 10px;
@@ -107,18 +119,8 @@ figure{
   height: auto;
 }
 
-.jquery ul, main p{
+.jquery ul{
   text-align: left;
-}
-
-@media(max-width:768px){
-  main{
-    flex-wrap: wrap;
-  }
-  .html5, .rwd, .jquery{
-    width: 70%;
-    text-align: center;
-  }
 }
 
 table{
@@ -127,17 +129,18 @@ table{
   border-collapse: collapse;
   display: flex;
   justify-content: space-around;
+  margin: 10px;
 }
 
 table th{
-  font-size: 18px;
   padding-right: 15%;
-  width: 40%;
+  width: 30%;
+  text-align: left;
 }
 
 table td{
   padding: 2%;
-  width: 20%;
+  width: 200px;
 }
 
 table th, table td{
@@ -146,19 +149,19 @@ table th, table td{
 }
 
 .table-h2 td{
-    font-size: 30px;
-    text-align: center;
-    border-bottom: 1px solid #000;
-    border-top:1px solid #fff;
-    padding: 30px;
+  font-size: 30px;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  border-top:1px solid #fff;
+  padding: 30px;
 }
 
 table .strong{
-    font-weight: bold;
+  font-weight: bold;
 }
 
 table .highlight{
-    color: rgb(68,218,180);
+  color: rgb(68,218,180);
 }
 
 .reply{
@@ -173,17 +176,17 @@ table .highlight{
 }
 
 .reply h2{
-    text-align: center;
-    color: #fff;
-    width: 100%;
+  text-align: center;
+  color: #fff;
+  width: 100%;
 }
 
 textarea{
-    width: 45%;
-    margin: 15px;
-    border-radius: 5px;
-    border:none;
-    color: #000;
+  width: 45%;
+  margin: 15px;
+  border-radius: 5px;
+  border:none;
+  color: #000;
 }
 
 form{
@@ -191,39 +194,39 @@ form{
 }
 
 form input{
-    display: block;
-    width: 80%;
-    height: 25px;
-    margin: 10px;
-    color: #000;
-    border: none;
-    border-radius: 5px;
+  display: block;
+  width: 80%;
+  height: 25px;
+  margin: 10px;
+  color: #000;
+  border: none;
+  border-radius: 5px;
 }
 
 form label{
-    color: #fff; 
+  color: #fff; 
 }
 
 .submit{
-    float: right;
-    width: 80px;
-    height: 30px;
-    color: #fff;
-    background-color: #00cc99;
-    border: none;
-    padding: 10px;
-    border-radius: 8px;
+  float: right;
+  width: 80px;
+  height: 30px;
+  color: #fff;
+  background-color: #00cc99;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 .submit:hover{
-    background-color: #fff;
-    color: #000;
-    cursor: pointer;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
 }
 footer{
-    grid-column: 1/4;
-    grid-row: 38/41;
-    margin-top: 10px;
+  grid-column: 1/4;
+  grid-row: 38/41;
+  margin-top: 10px;
 }
 
 footer img{
@@ -238,5 +241,15 @@ address{
 }
 
 address span{
-    color: #e12d80;
+  color: #e12d80;
+}
+
+@media(max-width:768px){
+  main{
+    flex-wrap: wrap;
+  }
+  .html5, .rwd, .jquery{
+    width: 70%;
+    text-align: center;
+  }
 }
