@@ -35,25 +35,27 @@ header{
 nav{
   grid-column: 1/4;
   grid-row: 2/3;
-  display: flex;
-  justify-content: space-between;
   font-size: 16px;
 }
 
 h1{
   background-image: url(https://github.com/ailiyi/practice/blob/master/hw/hw1/img/%E4%BD%BF%E7%94%A8html%E5%81%9A%E7%B6%B2%E7%AB%99-_03.jpg?raw=true);
   background-repeat: no-repeat;
-  width: 220px;
-  height: 36px;
+  width: 170px;
+	height: 36px;
   text-indent: 101%;
   overflow: hidden;
   white-space: nowrap;
+  float: left;
 }
 
 nav ul{
   list-style: none;
-  display: flex;
-  align-items: flex-end;
+  float: right;
+}
+
+nav li{
+  float: left;
 }
 
 nav li a{
@@ -61,17 +63,15 @@ nav li a{
   text-align: center;
   font-size: 3vmin;
   color: rgb(68,218,180);
-  margin: 0 2% 0 0;
+  margin-right: 10px;
+  padding: 2px;
   display: block;
-  width: 100%;
-  margin: 10px;
 }
 
 nav li a:hover{
   background-color: rgb(68,218,180);
   color: #fff;
   border-radius: 10px;
-  padding: 3px;
 }
 
 
@@ -251,5 +251,25 @@ address span{
   .html5, .rwd, .jquery{
     width: 70%;
     text-align: center;
+  }
+}
+
+@media(max-width:767px){
+  nav ul,
+  nav h1{
+    float: none;
+  }
+  
+  nav h1 a{
+    margin: 0 auto;
+    margin-top: 2%;
+  }
+  
+  nav ul li{
+    width: 50%;
+    text-align: center;
+  }
+  h1{
+    margin: 0 auto;
   }
 }
