@@ -36,26 +36,27 @@ nav{
   grid-column: 1/4;
   grid-row: 2/3;
   font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
 }
 
 h1{
   background-image: url(https://github.com/ailiyi/practice/blob/master/hw/hw1/img/%E4%BD%BF%E7%94%A8html%E5%81%9A%E7%B6%B2%E7%AB%99-_03.jpg?raw=true);
-  background-repeat: no-repeat;
-  width: 170px;
-	height: 36px;
+  background-repeat: no-repeat; 
   text-indent: 101%;
   overflow: hidden;
   white-space: nowrap;
-  float: left;
+  flex:1;
 }
 
 nav ul{
   list-style: none;
-  float: right;
+  flex:1;
 }
 
 nav li{
-  float: left;
+  float: right;
 }
 
 nav li a{
@@ -73,7 +74,6 @@ nav li a:hover{
   color: #fff;
   border-radius: 10px;
 }
-
 
 banner{
   grid-column: 1/4;
@@ -245,31 +245,24 @@ address span{
 }
 
 @media(max-width:768px){
+  nav {
+    flex-wrap: wrap; 
+  }
+  
+  nav ul li{
+    width: 50%;
+  }
+
+  h1{
+    flex-basis: 100%;
+    margin: 0 auto;
+  }
+
   main{
     flex-wrap: wrap;
   }
   .html5, .rwd, .jquery{
     width: 70%;
     text-align: center;
-  }
-}
-
-@media(max-width:767px){
-  nav ul,
-  nav h1{
-    float: none;
-  }
-  
-  nav h1 a{
-    margin: 0 auto;
-    margin-top: 2%;
-  }
-  
-  nav ul li{
-    width: 50%;
-    text-align: center;
-  }
-  h1{
-    margin: 0 auto;
   }
 }
