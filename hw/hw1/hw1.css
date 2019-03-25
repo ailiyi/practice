@@ -256,6 +256,7 @@ address span{
   h1{
     flex-basis: 100%;
     margin: 0 auto;
+    background-position: center;
   }
 
   main{
@@ -266,3 +267,5 @@ address span{
     text-align: center;
   }
 }
+
+/* 將 nav ul 的寬度設為 100%，並且取消 nav 裡面 h1, ul 的 dispaly: flex */
