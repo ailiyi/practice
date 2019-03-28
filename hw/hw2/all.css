@@ -102,10 +102,12 @@ footer{
     display: block;
     width: 60px;
     order: 1;
+    background-color: rgb(131,204,210);
+    color: #fff;
   }
 
   ul{
-    max-height: 0;
+    max-height: 0px;
     overflow: hidden;
     order: 2;
     display: flex;
@@ -114,16 +116,23 @@ footer{
     z-index: 100;
     position: absolute;
     top:74px;
-    background-color:rgb(1, 154, 197);
+    background-color: rgb(146, 195, 200);
     width: 100%;
     height: 50%;
-
-    transition: max-height 2.3s;
-    margin-top: 1px;
   }
 
   ul li{
     width: 100%;
+    border-bottom: 1px dashed #fff;
+  }
+
+  li:last-child{
+    border: none;
+  }
+
+  nav a{
+    background-color: rgb(240, 237, 206);
+    color: rgb(102, 132, 176);
   }
 
   ul .show{
